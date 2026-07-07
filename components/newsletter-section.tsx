@@ -42,7 +42,7 @@ export function NewsletterSection() {
                   </span>
                 </h2>
                 <p className="text-lg text-neutral-600">
-                  Be the first to discover new collections, design insights, and exclusive access to limited pieces.
+                  Discover safe, affordable, and fully furnished rooms designed for students and working professionals.
                 </p>
               </div>
 
@@ -96,7 +96,7 @@ export function NewsletterSection() {
                   <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                     <Check size={24} className="text-green-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">Welcome to KATACHI</h3>
+                  <h3 className="text-xl font-semibold text-neutral-900 mb-2">Welcome to AM Co-Living PG</h3>
                   <p className="text-neutral-600">
                     Thank you for subscribing. You'll receive our next newsletter with exclusive insights and new
                     arrivals.

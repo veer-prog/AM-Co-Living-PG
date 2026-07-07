@@ -48,10 +48,9 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">KATACHI</h3>
+              <h3 className="text-2xl font-bold text-neutral-900 mb-4">AM Co-Living PG</h3>
               <p className="text-neutral-600 mb-6 leading-relaxed">
-                Architected in Belgium, built to last. We create timeless furniture pieces in solid oak, steel, and
-                linen for spaces that breathe.
+                Happiness Like A Home. Safe, comfortable, and fully furnished accommodation for students and working professionals.
               </p>
               <div className="flex space-x-4">
                 {socialLinks.map((social) => (
@@ -113,7 +112,7 @@ export function Footer() {
           viewport={{ once: true }}
         >
           <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-neutral-500 text-center">
-            <p>&copy; {currentYear} KATACHI Studio. All rights reserved.</p>
+            <p>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
             <div className="flex space-x-6">
               <a href="#" className="hover:text-neutral-700 transition-colors">
                 Privacy Policy

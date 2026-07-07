@@ -34,12 +34,12 @@ export function Header() {
             <a
               href="#"
               className={cn(
-                "text-xl lg:text-2xl font-bold tracking-tight transition-colors",
+                "text-xl lg:text-2xl font-semibold tracking-tight transition-colors",
                 isScrolled ? "text-neutral-900 hover:text-neutral-700" : "text-white hover:text-white/80",
               )}
-              aria-label="KATACHI Studio Home"
+              aria-label="AM Co-Living PG Home"
             >
-              KATACHI
+              AM Co-Living PG
             </a>
           </motion.div>
         </div>
