@@ -1,13 +1,14 @@
 "use client"
 
 import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
 
 export function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const pathname = usePathname()
 
   useEffect(() => {
@@ -54,14 +55,14 @@ export function Header() {
             </Link>
           </motion.div>
 
-          {/* Navigation Links - Right Aligned */}
-          <nav className="flex items-center gap-4 md:gap-8">
+          {/* Desktop Navigation Links - Right Aligned */}
+          <nav className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-xs md:text-sm font-medium transition-colors duration-200",
+                  "text-sm font-medium transition-colors duration-200",
                   isActive(link)
                     ? isScrolled
                       ? "text-neutral-900 border-b-2 border-neutral-900"
@@ -75,7 +76,60 @@ export function Header() {
               </Link>
             ))}
           </nav>
+
+          {/* Mobile Hamburger Menu */}
+          <button
+            className="md:hidden flex items-center justify-center w-10 h-10 rounded-lg"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            aria-label="Toggle mobile menu"
+          >
+            <svg
+              className={cn(
+                "w-6 h-6 transition-colors",
+                isScrolled ? "text-neutral-900" : "text-white",
+              )}
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden border-t border-white/[0.02]"
+            >
+              <div className="flex flex-col gap-4 py-4">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.href}
+                    href={link.href}
+                    className={cn(
+                      "text-sm font-medium transition-colors px-4 py-2 rounded-lg",
+                      isActive(link)
+                        ? isScrolled
+                          ? "text-neutral-900 bg-neutral-100"
+                          : "text-white bg-white/10"
+                        : isScrolled
+                          ? "text-neutral-600 hover:text-neutral-900 hover:bg-neutral-100"
+                          : "text-white/70 hover:text-white hover:bg-white/10",
+                    )}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </motion.header>
   )

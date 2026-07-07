@@ -17,7 +17,7 @@ export function HeroSection() {
   const imageScale = useTransform(scrollYProgress, [0, 1], [1.05, 0.95]) // Reduced hero image shrink from 15% to 5%
   const imageY = useTransform(scrollYProgress, [0, 1], [0, -50])
   const contentY = useTransform(scrollYProgress, [0, 1], [0, 100])
-  const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.8], [1, 0.3])
 
   const AnimatedText = ({ text, delay = 0 }: { text: string; delay?: number }) => {
     return (
@@ -65,33 +65,40 @@ export function HeroSection() {
       </motion.div>
 
       {/* Content */}
-      <motion.div
-        className="relative z-10 h-full flex items-center justify-center"
-        style={{ y: contentY, opacity: contentOpacity }}
-      >
+      <div className="relative z-10 h-full flex items-center justify-center">
         <div className="container-custom text-center text-white">
-          <Reveal>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight mb-6">
-              <AnimatedText text="Comfortable Living" delay={0.5} />
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
+          >
+            <h1 
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-none tracking-tight mb-6"
+              style={{
+                textShadow: "3px 3px 8px rgba(0, 0, 0, 0.9), 0px 0px 15px rgba(0, 0, 0, 0.7)",
+              }}
+            >
+              Comfortable Living
               <br />
               <span className="italic font-light">
-                <AnimatedText text="right where you need it." delay={1.1} />
+                right where you need it.
               </span>
             </h1>
-          </Reveal>
+          </motion.div>
 
-          <Reveal delay={0.2}>
-            <motion.p
-              className="text-lg md:text-xl text-white/90 mb-12 leading-relaxed"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 0.7, ease: [0.21, 0.47, 0.32, 0.98] }}
-            >
-              Modern, fully furnished rooms designed for comfort, convenience, and peace of mind.
-            </motion.p>
-          </Reveal>
+          <motion.p
+            className="text-lg md:text-xl text-white mb-12 leading-relaxed font-medium"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
+            style={{
+              textShadow: "2px 2px 6px rgba(0, 0, 0, 0.8), 0px 0px 12px rgba(0, 0, 0, 0.6)"
+            }}
+          >
+            Modern, fully furnished rooms designed for comfort, convenience, and peace of mind.
+          </motion.p>
         </div>
-      </motion.div>
+      </div>
 
       {/* Info Strip */}
       <motion.div
