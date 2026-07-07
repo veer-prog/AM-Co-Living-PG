@@ -111,15 +111,15 @@ export function HeroSection() {
           <div className="flex items-center justify-center gap-6 text-white/90">
             <div className="flex items-center gap-2">
               <PackageCheck className="w-4 h-4 text-green-400" />
-              <span className="text-sm">Free shipping</span>
+              <span className="text-sm">Fully Furnished</span>
             </div>
             <div className="flex items-center gap-2">
               <Rocket className="w-4 h-4 text-amber-400" />
-              <span className="text-sm">Delivered in 6 weeks</span>
+              <span className="text-sm">High-Speed Wi-Fi</span>
             </div>
             <div className="flex items-center gap-2">
               <ShieldCheck className="w-4 h-4 text-blue-400" />
-              <span className="text-sm">Lifetime guarantee</span>
+              <span className="text-sm">24/7 Security</span>
             </div>
           </div>
         </BlurPanel>
