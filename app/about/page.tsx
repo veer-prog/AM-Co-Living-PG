@@ -28,7 +28,7 @@ export default function AboutPage() {
         <section className="py-16 md:py-24 lg:py-32">
           <div className="container-custom">
             <div className="text-center mb-12 md:mb-16">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "48px" }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "36px" }}>
                 About AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
@@ -109,7 +109,7 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                 A Community You'll Love
               </h2>
-              <p className="text-base md:text-lg text-neutral-600 leading-relaxed">
+              <p className="text-base md:text-lg text-neutral-600 leading-relaxed text-justify">
                 More than just a PG, AM Co-Living is a place where friendships grow, opportunities begin, and every resident enjoys a comfortable lifestyle with modern facilities and a supportive environment. We're dedicated to creating a space where you can truly belong.
               </p>
             </div>
