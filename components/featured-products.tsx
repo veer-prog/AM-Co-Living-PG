@@ -88,7 +88,7 @@ export function FeaturedProducts() {
             <h2 className="text-4xl text-neutral-900 mb-4 lg:text-6xl">
               Featured <span className="italic font-light">Rooms</span>
             </h2>
-            <p className="text-lg text-neutral-600 max-w-2xl">
+            <p className="text-base text-neutral-600 max-w-2xl">
               Discover our fully furnished rooms, thoughtfully designed to provide comfort, convenience, and a homely living experience.
             </p>
           </div>

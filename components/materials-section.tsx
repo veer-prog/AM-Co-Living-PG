@@ -95,12 +95,12 @@ export function MaterialsSection() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
-                  className="font-bold mb-6 text-7xl"
+                  className="font-bold mb-6 text-4xl md:text-5xl lg:text-6xl"
                 >
                   <AnimatedText text={activeMaterialData.name} delay={0.2} />
                 </motion.h2>
               </AnimatePresence>
-              <p className="text-lg text-white/90 leading-relaxed max-w-2xl">
+              <p className="text-base text-white/90 leading-relaxed max-w-2xl">
                 Every piece begins with the finest materials, carefully selected for their beauty, durability, and
                 sustainable origins. Our craftspeople honor traditional techniques while embracing modern precision.
               </p>
