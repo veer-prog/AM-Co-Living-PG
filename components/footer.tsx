@@ -48,7 +48,7 @@ export function Footer() {
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
-              <h3 className="text-2xl font-bold text-neutral-900 mb-4">AM Co-Living PG</h3>
+              <h3 className="text-2xl font-bold text-[#ff7d00] mb-4 font-sans">AM Co-Living PG</h3>
               <p className="text-sm text-neutral-600 mb-6 leading-relaxed font-sans">
                 Happiness Like A Home. Safe, comfortable, and fully furnished accommodation for students and working professionals.
               </p>
