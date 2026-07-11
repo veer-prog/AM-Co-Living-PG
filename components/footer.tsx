@@ -102,9 +102,6 @@ export function Footer() {
               <a href="#" className="hover:text-neutral-700 transition-colors">
                 Terms of Service
               </a>
-              <a href="#" className="hover:text-neutral-700 transition-colors">
-                Cookies
-              </a>
             </div>
           </div>
         </motion.div>
