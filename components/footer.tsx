@@ -6,26 +6,9 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   const footerLinks = {
-    Shop: [
-      { name: "New Arrivals", href: "#" },
-      { name: "Chairs", href: "#" },
-      { name: "Tables", href: "#" },
-      { name: "Storage", href: "#" },
-      { name: "Lighting", href: "#" },
-    ],
-    Company: [
+
+    PG: [
       { name: "About", href: "#" },
-      { name: "Craftsmanship", href: "#" },
-      { name: "Sustainability", href: "#" },
-      { name: "Careers", href: "#" },
-      { name: "Press", href: "#" },
-    ],
-    Support: [
-      { name: "Contact", href: "#" },
-      { name: "Size Guide", href: "#" },
-      { name: "Care Instructions", href: "#" },
-      { name: "Shipping", href: "#" },
-      { name: "Returns", href: "#" },
     ],
   }
 
