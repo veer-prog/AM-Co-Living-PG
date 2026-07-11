@@ -140,7 +140,7 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8" style={{ fontFamily: '"Geist", sans-serif' }}>
+          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Roboto", sans-serif', fontSize: '72px' }}>
             AM Co-Living PG
           </h2>
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-white/80 text-center border-t border-white/20 pt-8">

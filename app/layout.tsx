@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Geist } from "next/font/google"
+import { Inter, Geist, Roboto, Poppins, Fira_Sans, Rubik } from "next/font/google"
 import "./globals.css"
 
 const inter = Inter({
@@ -13,6 +13,34 @@ const geist = Geist({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-geist",
+})
+
+const roboto = Roboto({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-roboto",
+})
+
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+})
+
+const firaSans = Fira_Sans({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-fira-sans",
+})
+
+const rubik = Rubik({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-rubik",
 })
 
 export const metadata: Metadata = {
@@ -58,7 +86,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geist.variable} antialiased`}>
+    <html lang="en" className={`${inter.variable} ${geist.variable} ${roboto.variable} ${poppins.variable} ${firaSans.variable} ${rubik.variable} antialiased`}>
       <body className="font-sans bg-neutral-50 text-neutral-900 overflow-x-hidden">{children}</body>
     </html>
   )
