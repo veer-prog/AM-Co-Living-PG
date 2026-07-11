@@ -70,7 +70,7 @@ export default function AboutPage() {
                 About
               </h1>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f56b35] mb-6" style={{ fontSize: "33px" }}>
-                About AM Co-Living PG
+                AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
                 A Place That Feels Like Home Always!
