@@ -21,7 +21,7 @@ const rules = [
     items: [
       "Visitors are welcome only between 10:00 AM and 6:00 PM.",
       "Overnight guests are not permitted. Additional charges will apply if this policy is violated.",
-      "All visitors must register at the reception/security desk.",
+      "All visitors must register at the reception/security desk first.",
     ],
     icon: "👥",
   },
@@ -128,8 +128,8 @@ export default function HouseRulesPage() {
         <div className="container-custom">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-16">
             {/* Image */}
-            <div className="flex justify-center lg:justify-start">
-              <div className="relative w-full max-w-xs h-96">
+            <div className="flex justify-center lg:justify-start mt-10">
+              <div className="relative w-[420px] h-[280px]">
                 <Image
                   src="/house-rules-man.png"
                   alt="Illustration of man pointing to house rules"
