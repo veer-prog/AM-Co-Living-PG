@@ -102,6 +102,15 @@ const rules = [
     ],
     icon: "📞",
   },
+  {
+    title: "Conduct & Behavior",
+    items: [
+      "Maintain respectful and courteous behavior towards all residents and staff.",
+      "Avoid any form of harassment, discrimination, or bullying.",
+      "Report any misconduct or rule violations to the management immediately.",
+    ],
+    icon: "🤝",
+  },
 ]
 
 export default function HouseRulesPage() {
@@ -126,9 +135,29 @@ export default function HouseRulesPage() {
       {/* Rules with Image Section */}
       <section className="py-16 md:py-24">
         <div className="container-custom">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start mb-16" style={{ fontFamily: '"Geist", sans-serif' }}>
-            {/* Image */}
-            <div className="flex justify-center lg:justify-start mt-10">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start" style={{ fontFamily: '"Geist", sans-serif' }}>
+            {/* Left Column Rules */}
+            <div className="space-y-8">
+              {rules.slice(0, 6).map((rule) => (
+                <div key={rule.title} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-md transition-all duration-300">
+                  <div className="flex items-start gap-3 mb-3">
+                    <span className="text-2xl">{rule.icon}</span>
+                    <h3 className="text-lg font-medium text-neutral-900">{rule.title}</h3>
+                  </div>
+                  <ul className="space-y-2">
+                    {rule.items.map((item, idx) => (
+                      <li key={idx} className="text-sm text-neutral-600 flex gap-2">
+                        <span className="text-[#f2703b] font-bold">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+
+            {/* Center Image */}
+            <div className="flex justify-center items-start mt-10">
               <div className="relative w-[420px] h-[280px]">
                 <Image
                   src="/house-rules-man.png"
@@ -139,9 +168,9 @@ export default function HouseRulesPage() {
               </div>
             </div>
 
-            {/* First Column Rules */}
+            {/* Right Column Rules */}
             <div className="space-y-8">
-              {rules.slice(0, 4).map((rule) => (
+              {rules.slice(6).map((rule) => (
                 <div key={rule.title} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-md transition-all duration-300">
                   <div className="flex items-start gap-3 mb-3">
                     <span className="text-2xl">{rule.icon}</span>
@@ -158,46 +187,6 @@ export default function HouseRulesPage() {
                 </div>
               ))}
             </div>
-
-            {/* Second Column Rules */}
-            <div className="space-y-8">
-              {rules.slice(4, 8).map((rule) => (
-                <div key={rule.title} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-md transition-all duration-300">
-                  <div className="flex items-start gap-3 mb-3">
-                    <span className="text-2xl">{rule.icon}</span>
-                    <h3 className="text-lg font-medium text-neutral-900">{rule.title}</h3>
-                  </div>
-                  <ul className="space-y-2">
-                    {rule.items.map((item, idx) => (
-                      <li key={idx} className="text-sm text-neutral-600 flex gap-2">
-                        <span className="text-[#f2703b] font-bold">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Third Column Rules (Remaining) */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" style={{ fontFamily: '"Geist", sans-serif' }}>
-            {rules.slice(8).map((rule) => (
-              <div key={rule.title} className="bg-neutral-50 p-6 rounded-lg border border-neutral-200 hover:border-neutral-300 hover:shadow-md transition-all duration-300">
-                <div className="flex items-start gap-3 mb-3">
-                  <span className="text-2xl">{rule.icon}</span>
-                  <h3 className="text-lg font-medium text-neutral-900">{rule.title}</h3>
-                </div>
-                <ul className="space-y-2">
-                  {rule.items.map((item, idx) => (
-                    <li key={idx} className="text-sm text-neutral-600 flex gap-2">
-                      <span className="text-[#f2703b] font-bold">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
           </div>
         </div>
       </section>
