@@ -220,22 +220,22 @@ export default function HouseRulesPage() {
               </p>
               <div className="flex flex-wrap items-center pt-6" style={{ gap: "32px" }}>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/google-pay-logo-png_seeklogo-393963-removebg-preview-a78Rk5PiHvmd87JFfkmpSIBh4fHZyv.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/pngtree-google-pay-payment-icon-vector-png-image_12256719-removebg-preview-HgaSZd90SWwVeb8on0uOlRKaEhf0jz.png"
                   alt="Google Pay"
-                  className="h-12 object-contain"
-                  style={{ borderRadius: "4px" }}
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
                 />
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/paytm-icon-removebg-preview-CMkvaScc4WjXSx2uulsU5ILd5HUiRg.png"
                   alt="Paytm"
-                  className="h-12 object-contain"
-                  style={{ borderRadius: "4px" }}
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
                 />
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/PhonePe_Logo.svg-removebg-preview-8ECfJhNAoYJn4V2M05rqY8sDc74QsO.png"
                   alt="PhonePe"
-                  className="h-12 object-contain"
-                  style={{ borderRadius: "4px" }}
+                  className="object-contain"
+                  style={{ borderRadius: "4px", width: "80px", height: "80px" }}
                 />
               </div>
             </div>
