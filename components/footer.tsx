@@ -140,16 +140,16 @@ export function Footer() {
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white text-center mb-8" style={{ fontFamily: '"Geist", sans-serif' }}>
+          <h2 className="font-bold text-white text-center mb-8" style={{ fontFamily: '"Nunito", sans-serif', fontSize: '72px' }}>
             AM Co-Living PG
           </h2>
-          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-white/80 text-center border-t border-white/20 pt-8">
-            <p>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
+          <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-6 text-sm text-center border-t border-white/20 pt-8" style={{ fontFamily: '"Inter", sans-serif', color: 'rgba(78, 76, 76, 0.8)' }}>
+            <p style={{ color: 'rgba(11, 11, 10, 0.8)' }}>&copy; {currentYear} AM Co-Living PG. All rights reserved.</p>
             <div className="flex space-x-6">
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="transition-colors" style={{ color: '#5b4c4c' }}>
                 Privacy Policy
               </a>
-              <a href="#" className="hover:text-white transition-colors">
+              <a href="#" className="transition-colors" style={{ color: '#5b4c4c' }}>
                 Terms of Service
               </a>
             </div>
