@@ -10,13 +10,13 @@ export default function ContactPage() {
     {
       icon: "📍",
       title: "Address",
-      content: "AM Co-Living PG, Mumbai, India",
+      content: "AM Co-Living PG, ch. shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057",
       details: "Centrally located in the heart of the city",
     },
     {
       icon: "📞",
       title: "Phone Number",
-      content: "+91-XXXXXXXXXX",
+      content: "9067372121",
       details: "Available 9:00 AM - 6:00 PM for your inquiries",
     },
     {
@@ -156,13 +156,13 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold text-slate-900 mb-4 uppercase tracking-wider">QUICK CONTACT</h3>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="tel:+919765230838"
+                    href="tel:9067372121"
                     className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
                   >
                     <span>CALL NOW</span>
                   </a>
                   <a
-                    href="https://wa.me/919765230838"
+                    href="https://wa.me/9067372121"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
