@@ -109,7 +109,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[0].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">ADDRESS</h3>
-                    <p className="text-lg text-slate-700 font-semibold mb-2">{contactInfo[0].content}</p>
+                    <p className="text-lg text-slate-700 mb-2" style={{ fontWeight: "400" }}>{contactInfo[0].content}</p>
                     <p className="text-base text-slate-600">{contactInfo[0].details}</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[1].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
-                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[1].content}</p>
+                    <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[1].content}</p>
                     <p className="text-base text-slate-600 mt-1">{contactInfo[1].details}</p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[3].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">OFFICE HOURS</h3>
-                    <p className="text-lg text-slate-700 font-semibold mb-1">{contactInfo[3].content}</p>
+                    <p className="text-lg text-slate-700 mb-1" style={{ fontWeight: "400" }}>{contactInfo[3].content}</p>
                     <p className="text-base text-slate-600">{contactInfo[3].details}</p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[2].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">EMAIL</h3>
-                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[2].content}</p>
+                    <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[2].content}</p>
                     <p className="text-base text-slate-600 mt-1">{contactInfo[2].details}</p>
                   </div>
                 </div>
