@@ -202,7 +202,7 @@ export default function ContactPage() {
                   Click the button below to open our location in Google Maps and get turn-by-turn directions to AM Co-Living PG.
                 </p>
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.app.goo.gl/2EhxRud6or69wnqe8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
