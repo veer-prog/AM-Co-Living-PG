@@ -10,13 +10,13 @@ export default function ContactPage() {
     {
       icon: "📍",
       title: "Address",
-      content: "AM Co-Living PG, Mumbai, India",
+      content: "AM Co-Living PG, Shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057",
       details: "Centrally located in the heart of the city",
     },
     {
       icon: "📞",
       title: "Phone Number",
-      content: "+91-XXXXXXXXXX",
+      content: "9067372121",
       details: "Available 9:00 AM - 6:00 PM for your inquiries",
     },
     {
@@ -109,7 +109,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[0].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">ADDRESS</h3>
-                    <p className="text-lg text-slate-700 font-semibold mb-2">{contactInfo[0].content}</p>
+                    <p className="text-lg text-slate-700 mb-2" style={{ fontWeight: "400" }}>{contactInfo[0].content}</p>
                     <p className="text-base text-slate-600">{contactInfo[0].details}</p>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[1].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">PHONE</h3>
-                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[1].content}</p>
+                    <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[1].content}</p>
                     <p className="text-base text-slate-600 mt-1">{contactInfo[1].details}</p>
                   </div>
                 </div>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[3].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">OFFICE HOURS</h3>
-                    <p className="text-lg text-slate-700 font-semibold mb-1">{contactInfo[3].content}</p>
+                    <p className="text-lg text-slate-700 mb-1" style={{ fontWeight: "400" }}>{contactInfo[3].content}</p>
                     <p className="text-base text-slate-600">{contactInfo[3].details}</p>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                   <span className="text-3xl mt-1">{contactInfo[2].icon}</span>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-1 uppercase tracking-wider">EMAIL</h3>
-                    <p className="text-lg text-slate-700 font-semibold">{contactInfo[2].content}</p>
+                    <p className="text-lg text-slate-700" style={{ fontWeight: "400" }}>{contactInfo[2].content}</p>
                     <p className="text-base text-slate-600 mt-1">{contactInfo[2].details}</p>
                   </div>
                 </div>
@@ -156,13 +156,13 @@ export default function ContactPage() {
                 <h3 className="text-lg font-bold text-slate-900 mb-4 uppercase tracking-wider">QUICK CONTACT</h3>
                 <div className="flex flex-col sm:flex-row gap-4">
                   <a
-                    href="tel:+919765230838"
+                    href="tel:9067372121"
                     className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
                   >
                     <span>CALL NOW</span>
                   </a>
                   <a
-                    href="https://wa.me/919765230838"
+                    href="https://wa.me/9067372121"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex-1 inline-flex items-center justify-center px-6 py-3 bg-green-600 text-white font-semibold rounded-lg hover:bg-green-700 transition-all duration-300"
@@ -202,7 +202,7 @@ export default function ContactPage() {
                   Click the button below to open our location in Google Maps and get turn-by-turn directions to AM Co-Living PG.
                 </p>
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.app.goo.gl/2EhxRud6or69wnqe8"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center w-full px-6 py-3 bg-slate-900 text-white font-semibold rounded-lg hover:bg-slate-800 transition-all duration-300"
