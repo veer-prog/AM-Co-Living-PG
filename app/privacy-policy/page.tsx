@@ -150,7 +150,7 @@ export default function PrivacyPolicyPage() {
             <div className="max-w-3xl space-y-12 md:space-y-16">
               {sections.map((section, index) => (
                 <motion.div key={index} variants={itemVariants} className="space-y-4" style={{ fontFamily: '"Geist", sans-serif' }}>
-                  <h2 className="text-2xl md:text-3xl font-bold text-neutral-900" style={{ fontFamily: '"Geist", sans-serif' }}>
+                  <h2 className="text-2xl md:text-3xl font-medium text-neutral-900" style={{ fontFamily: '"Geist", sans-serif' }}>
                     {section.title}
                   </h2>
                   <p className="text-base md:text-lg text-neutral-700 leading-relaxed" style={{ fontFamily: '"Geist", sans-serif', textAlign: 'left' }}>
@@ -191,10 +191,10 @@ export default function PrivacyPolicyPage() {
         >
           <div className="container-custom">
             <motion.div variants={itemVariants} className="max-w-3xl">
-              <h2 className="text-2xl md:text-3xl font-bold text-neutral-900 mb-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+              <h2 className="text-2xl md:text-3xl font-medium text-neutral-900 mb-6" style={{ fontFamily: '"Geist", sans-serif' }}>
                 Contact Us
               </h2>
-              <p className="text-base md:text-lg text-neutral-700 leading-relaxed mb-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+              <p className="text-base md:text-lg text-neutral-700 leading-relaxed mb-6" style={{ fontFamily: '"Geist", sans-serif', textAlign: 'justify' }}>
                 If you have any questions regarding this Privacy Policy or how your information is handled, please contact us.
               </p>
               <div className="space-y-3" style={{ fontFamily: '"Geist", sans-serif' }}>
@@ -203,7 +203,7 @@ export default function PrivacyPolicyPage() {
                 </p>
                 <p className="text-neutral-700 flex items-start gap-2">
                   <span>📍</span>
-                  <span>Address: AM Co-Living PG, Shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057</span>
+                  <span style={{ textAlign: 'justify' }}>Address: AM Co-Living PG, Shivaji maharaj chowk, Phase 1, Hinjawadi, Pune, Maharashtra 411057</span>
                 </p>
                 <p className="text-neutral-700 flex items-center gap-2">
                   <span>📞</span>
