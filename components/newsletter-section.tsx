@@ -110,7 +110,7 @@ export function NewsletterSection() {
             >
               <p className="text-neutral-600 mb-4">Still have questions?</p>
               <a
-                href="mailto:contact@amcoliving.com"
+                href="tel:9067372121"
                 className="inline-block px-8 py-3 bg-neutral-900 text-white rounded-full font-medium hover:bg-neutral-800 transition-colors"
               >
                 Get in Touch
