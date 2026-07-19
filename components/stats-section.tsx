@@ -18,7 +18,7 @@ const stats: Stat[] = [
     label: "Locations",
   },
   {
-    number: "60+",
+    number: "120+",
     label: "Rooms",
   },
 ]
