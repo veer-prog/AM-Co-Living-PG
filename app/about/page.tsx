@@ -64,7 +64,7 @@ export default function AboutPage() {
 
       <main className="min-h-screen bg-white pt-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 lg:py-32">
+        <section className="py-16 md:py-10 lg:py-22">
           <div className="container-custom">
             <div className="text-center mb-12 md:mb-16" style={{ fontFamily: '"Quicksand", sans-serif' }}>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px", fontFamily: '"Inter", sans-serif' }}>
