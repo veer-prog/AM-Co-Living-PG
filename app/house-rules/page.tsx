@@ -256,7 +256,7 @@ export default function HouseRulesPage() {
       {/* Closing Section */}
       <section className="py-16 md:py-24 bg-neutral-50">
         <div className="container-custom">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-5xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-medium text-neutral-900 mb-6">
               Thank You for Being Part of Our Community
             </h2>
