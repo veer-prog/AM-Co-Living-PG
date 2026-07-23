@@ -88,11 +88,11 @@ export default function AboutPage() {
                 <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-6">
                   Our Mission
                 </h2>
-                <div className="space-y-10" style={{ fontFamily: '"Geist", sans-serif' }}>
-                  <p className="text-base md:text-lg text-[#120000] leading-relaxed font-geist">
+                <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+                  <p className="text-base md:text-lg text-[#120000] leading-relaxed font-sans">
                     At AM Co-Living PG, we believe that a great living experience goes beyond just providing a room. We offer safe, comfortable, and fully furnished accommodation designed to make students and working professionals feel at home from the very first day.
                   </p>
-                  <p className="text-base md:text-lg text-black leading-relaxed font-geist">
+                  <p className="text-base md:text-lg text-black leading-relaxed font-sans">
                     Our thoughtfully designed spaces combine modern amenities with a welcoming community, creating the perfect environment to live, work, study, and relax. Whether you're relocating for education or your career, we ensure a hassle-free stay with everything you need under one roof.
                   </p>
                 </div>
