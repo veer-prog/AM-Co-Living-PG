@@ -70,7 +70,7 @@ export default function AboutPage() {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[rgb(58,58,52)] mb-6" style={{ fontSize: "23px", fontFamily: '"Inter", sans-serif' }}>
                 About
               </h1>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#f56b35] mb-6" style={{ fontSize: "33px", fontFamily: '"Geist", sans-serif' }}>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f56b35] mb-6" style={{ fontSize: "48px", fontFamily: '"Roboto", sans-serif' }}>
                 AM Co-Living PG
               </h1>
               <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto" style={{ fontFamily: '"Inter", sans-serif' }}>
@@ -117,8 +117,8 @@ export default function AboutPage() {
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium text-neutral-900 mb-4">
                 Why Choose AM Co-Living?
               </h2>
-              <p className="text-base md:text-lg text-neutral-600 max-w-4xl mx-auto font-sans">
-                We provide everything you need for a comfortable, safe, and fulfilling living experience.
+              <p className="text-base md:text-lg text-neutral-600 max-w-7xl mx-auto font-geist text-justify">
+                Keeping this dynamic situation in mind, many students and white collared professionals flock to Pune in search of various opportunities. This further takes them to choose Paying Guests as an economical option of living. Shared living space or coliving space is the modern form of living where fellow mates are offered a host of living alternatives to choose from. With a host of facilities alongside, these spaces are focusing on features like advantages like flexibility, affordability and a sense of unity.
               </p>
             </div>
 
