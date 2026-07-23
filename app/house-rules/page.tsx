@@ -122,7 +122,7 @@ export default function HouseRulesPage() {
       <section className="pt-16 md:pt-20 pb-8 md:pb-10 bg-gradient-to-b from-neutral-50 to-white">
         <div className="container-custom">
           <div className="text-center mb-">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "48px", fontFamily: '"Roboto", sans-serif' }}>
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-medium text-[#f2703b] mb-6" style={{ fontSize: "50px", fontFamily: '"Roboto", sans-serif' }}>
               House Rules
             </h1>
             <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
